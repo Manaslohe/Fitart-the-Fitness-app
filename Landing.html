@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
   <link href="./assets/css/aos.css" rel="stylesheet">
   <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
@@ -139,14 +140,13 @@
           </div>
           <div class="col-md-8 pt-4" data-aos="fade-up">
             <ul style="font-size: 18px;">
-              <li class="bi-check"><strong>Variety:</strong> Access to various gyms, sports and fitness centers.</li>
-              <li class="bi-check"><strong>Convenience:</strong> One membership for all locations.</li>
-              <li class="bi-check"><strong>Flexibility:</strong> Choose from multiple workout styles, including yoga, Pilates, Zumba, and more.</li>
-              <li class="bi-check"><strong>Community:</strong> Join a supportive fitness community.</li>
-              <li class="bi-check"><strong>Risk-Free:</strong> Enjoy our 30-day money-back guarantee if you're not satisfied.</li>
-              <li class="bi-check"><strong>Personalized Workouts:</strong> Tailor your fitness journey with customized plans.</li>
-              <li class="bi-check"><strong>Tracking Progress:</strong> Monitor your progress with our built-in tools.</li>
-              <li class="bi-check" > <strong>Money-Back Guarantee:</strong> Try Fitart risk-free with our 30-day money-back guarantee.</li>
+              <li class="bi-check"><strong>Variety:</strong> Workout your way.</li>
+              <li class="bi-check"><strong>Convenience:</strong> One membership, endless options.</li>
+              <li class="bi-check"><strong>Flexibility:</strong> Your pace, your style.</li>
+              <li class="bi-check"><strong>Community:</strong> Find your fitness tribe.</li>
+              <li class="bi-check"><strong>Risk-Free:</strong> Try us on and get your money back if you don't get results.</li>
+              <li class="bi-check"><strong>Personalized:</strong> Your goals, your plan.</li>
+              <li class="bi-check"><strong>Money Back:</strong> Love it or leave it.</li>
             </ul>
           </div>
         </div>
@@ -251,7 +251,7 @@
 </style>
 <br><br>
 <div class="container">
-  <h2 class="contact-message">If you have any additional questions, please contact our customer support team through the app or via email at <a href="mailto:support@fitart.com">support@fitart.com</a>. We're here to help!</h2>
+  <h2 class="contact-message">If you have any additional questions, please contact our customer support team through the app or via Call on <a href="callto:8007055055">8007055055</a> or email at <a href="mailto:support@fitart.com">support@fitart.com</a>. We're here to help!</h2>
 </div>
 
 
@@ -289,34 +289,67 @@
             </div>
 
           </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
-
+          <style>
+            .custom-input {
+                font-weight: bold; /* Bold the text inside the input */
+                border: 2px solid #007bff; /* Bold the border of the input */
+                padding: 1px 20px; /* Add some padding for better appearance */
+                margin: 10px 0; /* Add some margin for spacing */
+                box-shadow: none; /* Remove any default shadow */
+                border-radius: 8px; /* Add more rounding to the corners */
+                background-color: white; /* Ensure background color is set */
+                color: black; /* Ensure the text color is black */
+                width: 100%; /* Make the input take the full width of its container */
+            }
+            .custom-input:focus {
+                outline: none; /* Remove the default focus outline */
+                border-color: #0056b3; /* Change border color on focus */
+                box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Add a subtle shadow on focus */
+            }
+            .custom-form-group {
+                border: 2px solid #007bff; /* Add border to form group */
+                padding: 1px 2px; /* Add some padding */
+                margin: 10px 0; /* Add some margin */
+                border-radius: 8px; /* Add more rounding to the corners */
+                background-color: #f8f9fa; /* Light background color for better visibility */
+            }
+            .form-row {
+                display: flex;
+                gap: 20px; /* Add gap between the two boxes */
+            }
+            .form-row .custom-form-group {
+                flex: 1; /* Make both fields take equal width */
+            }
+            .form-container {
+                padding: 20px;
+                border-radius: 8px;
+                background-color: #e9ecef;
+                border: 1px solid #007bff;
+            }
+        </style>
+        <div class="col-lg-8 mt-5 mt-lg-0 form-container" data-aos="fade-left" data-aos-delay="200">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                <div class="form-row">
+                    <div class="custom-form-group">
+                        <input type="text" name="name" class="custom-input" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="custom-form-group">
+                        <input type="email" class="custom-input" name="email" id="email" placeholder="Your Email" required>
+                    </div>
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <div class="custom-form-group mt-3">
+                    <input type="text" class="custom-input" name="Phone Number" id="Phone Number" placeholder="Phone Number" required>
                 </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+                <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
-
-          </div>
-
+        </div>
+        
+        
         </div>
 
       </div>

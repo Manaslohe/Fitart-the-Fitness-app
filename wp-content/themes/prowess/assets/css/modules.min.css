@@ -16589,11 +16589,12 @@ table.tt_timetable .tt_tooltip_text .tt_tooltip_arrow {
 }
 
 .qodef-page-footer .qodef-footer-top-holder .qodef-footer-top-inner.qodef-grid {
-    padding: 76px 0
+    padding-top: 35px ;
+    padding-bottom: 35px;
 }
 
 .qodef-page-footer .qodef-footer-top-holder .qodef-footer-top-inner.qodef-full-width {
-    padding: 76px 40px
+    padding: 25x 40px
 }
 
 .qodef-page-footer .qodef-footer-bottom-holder {
@@ -16655,11 +16656,11 @@ table.tt_timetable .tt_tooltip_text .tt_tooltip_arrow {
 }
 
 .qodef-page-footer .qodef-contact-form-7-widget .wpcf7 {
-    padding-top: 10px
+    padding-top: 1px
 }
 
 .qodef-page-footer .qodef-contact-form-7-widget .qodef-btn.qodef-btn-solid {
-    margin-top: 10px
+    margin-top: 1px
 }
 
 .qodef-page-header {

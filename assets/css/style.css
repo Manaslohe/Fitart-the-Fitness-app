@@ -587,7 +587,7 @@ section {
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #aaaaaa;
+  color: #ffffff;
   font-family: "Poppins", sans-serif;
 }
 
@@ -607,7 +607,7 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #010483;
+  color: #00ff00;
 }
 
 /*--------------------------------------------------------------
@@ -1260,7 +1260,7 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;
+  background: #000000;
 }
 
 .contact .info i {
@@ -1282,14 +1282,14 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #010483;
+  color: #00ff00
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #0205a1;
+  color: #ffffff;
 }
 
 .contact .info .email,
@@ -1306,7 +1306,7 @@ section {
 
 .contact .php-email-form {
   width: 100%;
-  background: #fff;
+  background: #000000;
 }
 
 .contact .php-email-form .form-group {

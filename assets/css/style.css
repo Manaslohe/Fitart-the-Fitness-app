@@ -44,7 +44,7 @@ h6 {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #60DD2A;
-  border-top-color: #02A6D3;
+  border-top-color: #ffffff;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -446,19 +446,29 @@ h6 {
   display: inline-block;
   padding: 20px 40px; /* Increased padding to make the button wider */
   border-radius: 50px;
-
   color: #fff;
-  background:#60DD2A;
+  background: linear-gradient(135deg, #60DD2A, #02A6D3);
+  background-size: 200% 200%;
+  transition: background-position 1s ease; /* Smooth transition for the background position */
 }
 
 #hero .btn-get-started:hover {
-  transition: all 1s ease; /* Added 'all' for smoother transition */
-  background: linear-gradient(135rad, #02A6D3, #60DD2A);
+  background-position: 100% 0;
 }
 
 #hero .animated {
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  animation: up-down 1s ease-in-out infinite alternate-reverse both;
 }
+
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
 
 
 @media (min-width: 1024px) {

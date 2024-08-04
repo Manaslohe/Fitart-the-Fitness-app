@@ -4,7 +4,7 @@ body {
 }
 
 a {
-  color: #1acc8d;
+  color: #60DD2A;
   text-decoration: none;
 }
 
@@ -33,20 +33,22 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: #161616;
 }
+
+
 
 #preloader:before {
   content: "";
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #1acc8d;
-  border-top-color: #d2f9eb;
+  border: 6px solid #60DD2A;
+  border-top-color: #02A6D3;
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 2s linear infinite;
 }
 
 @keyframes animate-preloader {
@@ -69,7 +71,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #1acc8d;
+  background:linear-gradient(135rad,#60DD2A,#02A6D3);
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -83,7 +85,6 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #2be4a2;
   color: #fff;
 }
 
@@ -117,12 +118,13 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(1, 4, 136, 0.9);
-  height: 60px;
+  background:#00c8ff49;
+  height: 70px;
 }
 
 #header .logo h1 {
   font-size: 28px;
+  font-weight: 500;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -192,7 +194,7 @@ h6 {
   height: 2px;
   bottom: 3px;
   left: 30px;
-  background-color: #1acc8d;
+  background-color: #60DD2A;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -237,7 +239,7 @@ h6 {
   font-size: 14px;
   font-weight: 500;
   text-transform: none;
-  color: #01036f;
+  color: #02A6D3;
 }
 
 .navbar .dropdown ul a i {
@@ -247,7 +249,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #1acc8d;
+  color: #60DD2A;
 }
 
 .navbar .dropdown:hover>ul {
@@ -389,7 +391,7 @@ h6 {
 .navbar-mobile .dropdown .dropdown ul a:hover,
 .navbar-mobile .dropdown .dropdown ul .active:hover,
 .navbar-mobile .dropdown .dropdown ul li:hover>a {
-  color: #1acc8d;
+  color: #60DD2A;
 }
 
 .navbar-mobile .dropdown>.dropdown-active,
@@ -402,14 +404,14 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  background: url("../img/hero-bg.jpg");
+  background: url("/assets/img/hero-bg.jpg");
   position: relative;
   padding: 120px 0 0 0;
 }
 
 #hero:before {
   content: "";
-  background: rgba(2, 5, 161, 0.91);
+  background:#02a6d3d1;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -427,7 +429,7 @@ h6 {
 
 #hero h1 span {
   color: #fff;
-  border-bottom: 4px solid #1acc8d;
+  border-bottom: 4px solid #60DD2A;
 }
 
 #hero h2 {
@@ -438,24 +440,26 @@ h6 {
 
 #hero .btn-get-started {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 30px;
+  padding: 20px 40px; /* Increased padding to make the button wider */
   border-radius: 50px;
-  transition: 0.5s;
+
   color: #fff;
-  background: #1acc8d;
+  background:#60DD2A;
 }
 
 #hero .btn-get-started:hover {
-  background: #17b57d;
+  transition: all 1s ease; /* Added 'all' for smoother transition */
+  background: linear-gradient(135rad, #02A6D3, #60DD2A);
 }
 
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
+
 
 @media (min-width: 1024px) {
   #hero {
@@ -596,7 +600,7 @@ section {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #1acc8d;
+  background: #60DD2A;
   margin: 4px 10px;
 }
 
@@ -703,13 +707,13 @@ section {
 }
 
 .about .icon-box .icon i {
-  color: #1acc8d;
+  color: #60DD2A;
   font-size: 32px;
 }
 
 .about .icon-box:hover .icon {
-  background: #1acc8d;
-  border-color: #1acc8d;
+  background: #60DD2A;
+  border-color: #60DD2A;
 }
 
 .about .icon-box:hover .icon i {
@@ -729,7 +733,7 @@ section {
 }
 
 .about .icon-box .title a:hover {
-  color: #1acc8d;
+  color: #60DD2A;
 }
 
 .about .icon-box .description {
@@ -769,7 +773,7 @@ section {
 }
 
 .features .icon-box h3 a:hover {
-  color: #01036f;
+  color: #02A6D3;
 }
 
 .features .icon-box:hover {
@@ -798,7 +802,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 20px;
-  background: #1acc8d;
+  background: #60DD2A;
   padding: 12px;
   color: #fff;
   border-radius: 50px;
@@ -849,7 +853,7 @@ section {
 .details .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #1acc8d;
+  color: #60DD2A;
 }
 
 .details .content p:last-child {
@@ -878,7 +882,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/cta-bg.jpg") no-repeat;
+  background: url("/assets/img/hero-bg.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -891,7 +895,7 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(1, 3, 111, 0.8);
+  background: rgba(0, 0, 8, 0.8);
 }
 
 .testimonials .section-header {
@@ -966,7 +970,7 @@ section {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #1acc8d;
+  background-color: #60DD2A;
 }
 
 @media (min-width: 1024px) {
@@ -1022,7 +1026,7 @@ section {
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 16px;
-  color: #01036f;
+  color: #02A6D3;
   position: relative;
   padding-bottom: 10px;
 }
@@ -1042,7 +1046,7 @@ section {
   font-style: italic;
   display: block;
   font-size: 13px;
-  color: #01036f;
+  color: #02A6D3;
 }
 
 .team .member .social {
@@ -1051,11 +1055,11 @@ section {
 
 .team .member .social a {
   transition: color 0.3s;
-  color: #01036f;
+  color: #02A6D3;
 }
 
 .team .member .social a:hover {
-  color: #1acc8d;
+  color: #60DD2A;
 }
 
 .team .member .social i {
@@ -1088,7 +1092,7 @@ section {
 
 .pricing h4 {
   font-size: 36px;
-  color: #1acc8d;
+  color: #60DD2A;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
@@ -1120,7 +1124,7 @@ section {
 }
 
 .pricing ul i {
-  color: #1acc8d;
+  color: #60DD2A;
   font-size: 18px;
   padding-right: 4px;
 }
@@ -1138,7 +1142,7 @@ section {
 }
 
 .pricing .btn-buy {
-  background: #1acc8d;
+  background: #60DD2A;
   display: inline-block;
   padding: 8px 35px 10px 35px;
   border-radius: 50px;
@@ -1157,7 +1161,7 @@ section {
 
 .pricing .featured h3 {
   color: #fff;
-  background: #1acc8d;
+  background: #60DD2A;
 }
 
 .pricing .advanced {
@@ -1169,7 +1173,7 @@ section {
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
-  background: #1acc8d;
+  background: #60DD2A;
   color: #fff;
 }
 
@@ -1238,7 +1242,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #1acc8d;
+  color: #60DD2A;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1260,16 +1264,16 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #000000;
+  background: #161616;
 }
 
 .contact .info i {
   font-size: 20px;
-  color: #3f43fd;
+  color:#ffffff;
   float: left;
   width: 44px;
   height: 44px;
-  background: #f0f0ff;
+  background:linear-gradient(135rad,#60DD2A,#02A6D3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1300,13 +1304,13 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #1acc8d;
+  background: #60DD2A;
   color: #fff;
 }
 
 .contact .php-email-form {
   width: 100%;
-  background: #000000;
+  background: #161616;
 }
 
 .contact .php-email-form .form-group {
@@ -1371,7 +1375,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #1acc8d;
+  background:linear-gradient(135rad,#60DD2A,#02A6D3);
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1411,7 +1415,7 @@ section {
   margin-bottom: 15px;
   background: #010246;
   color: #fff;
-  border-top: 4px solid #1acc8d;
+  border-top: 4px solid #60DD2A;
   text-align: center;
   padding: 30px 20px;
 }
@@ -1446,7 +1450,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #1acc8d;
+  background: #60DD2A;
   color: #fff;
   text-decoration: none;
 }
@@ -1520,7 +1524,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #1acc8d;
+  background: #60DD2A;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;

@@ -457,7 +457,8 @@ h6 {
 }
 
 #hero .animated {
-  animation: up-down 1s ease-in-out infinite alternate-reverse both;
+  animation: up-down 1  q1
+  s ease-in-out infinite alternate-reverse both;
 }
 
 @keyframes up-down {

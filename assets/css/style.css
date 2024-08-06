@@ -893,7 +893,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("/assets/img/hero-bg.jpg") no-repeat;
+  background: url("../img/hero-bg.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;

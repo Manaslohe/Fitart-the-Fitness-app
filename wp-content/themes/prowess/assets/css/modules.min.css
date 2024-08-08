@@ -14423,8 +14423,15 @@ table.tt_timetable .tt_tooltip_text .tt_tooltip_arrow {
     width: 100%;
     vertical-align: middle;
     margin: 0 0 40px;
-    clear: both
+    clear: both;
 }
+
+@media (max-width: 768px) { /* Adjust the max-width value as needed for your mobile breakpoint */
+    .qodef-blog-holder {
+        margin: 0;
+    }
+}
+
 
 .qodef-blog-holder article {
     position: relative;

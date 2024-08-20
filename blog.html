@@ -2943,75 +2943,131 @@ to support your muscle-building goals
 <div class="widget qodef-contact-form-7-widget ">
 <div class="qodef-widget-title-holder"><h3 class="qodef-widget-title">Submit Your Ideas</h3></div> <div role="form" class="wpcf7" id="wpcf7-f1107-o1" lang="en-US" dir="ltr">
 <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-<form action="/shop/?_gl=1%2A1avo325%2A_gcl_au%2AMTgzNTUwODUzOC4xNjkxNzQ0MjM5#wpcf7-f1107-o1" method="post" class="wpcf7-form init cf7_custom_style_1 demo" novalidate="novalidate" data-status="init">
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="1107" />
-<input type="hidden" name="_wpcf7_version" value="5.4.1" />
-<input type="hidden" name="_wpcf7_locale" value="en_US" />
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1107-o1" />
-<input type="hidden" name="_wpcf7_container_post" value="0" />
-<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-</div>
-<div class="two_columns_50_50 clearfix">
-<div class="column1">
-<div class="column_inner">
-<span class="wpcf7-form-control-wrap name"><input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name" /></span>
-</div>
-</div>
-<div class="column2">
-<div class="column_inner">
-<span class="wpcf7-form-control-wrap placeholder"><input type="text" name="placeholder" value="E-mail" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span>
-</div>
-</div>
-</div>
-<p><span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Comment"></textarea></span></p>
-	<style>
-  .custom-btn {
-	display: inline-block;
-  margin-top: 1px;
-  padding: 1px 2px;
-  background: linear-gradient(to right, #4df, #00ff00);
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 8px;
-  border: 2px solid #b3b3b3; /* Added border */
-  transition:background 0.3s ease, transform 0.3s ease, background-position 0.3s ease;
-  font-weight: bold;
-  }
+<style>
+/* General form styling */
+form[name="submit-to-google-sheet"] {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px 10px 10px; /* Removed top padding, kept side and bottom padding */
+    background-color: #333;  /* Dark background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    color: #fff;  /* White text color */
+}
 
-  .custom-btn input[type="submit"] {
-    display: none;
-  }
-
-  .custom-btn-text {
-    display: inline-block;
-    padding: 10px 25px;
-    background: linear-gradient(to right, #4df, #00ff00);
-    -webkit-background-clip: text;
-    color:white;
+/* Labels */
+form[name="submit-to-google-sheet"] label {
+    display: block;
+    margin-bottom: 5px;  /* Reduced spacing */
+    font-size: 14px;
     font-weight: bold;
-    text-transform: uppercase;
+    color: #fff;  /* White text color */
+}
+
+/* Input fields and Textarea */
+form[name="submit-to-google-sheet"] input[type="text"],
+form[name="submit-to-google-sheet"] input[type="email"],
+form[name="submit-to-google-sheet"] textarea {
+    width: 100%;
+    padding: 6px 8px;  /* Reduced padding for compact look */
+    margin-bottom: 10px;  /* Reduced margin */
+    border: 1px solid #666;
+    border-radius: 5px;
+    background-color: #555;  /* Grey background for input fields */
+    color: #fff;  /* White text color */
+    font-size: 14px;
+    box-sizing: border-box; /* Ensures padding does not affect overall width */
+}
+
+form[name="submit-to-google-sheet"] input[type="text"]:focus,
+form[name="submit-to-google-sheet"] input[type="email"]:focus,
+form[name="submit-to-google-sheet"] textarea:focus {
+    border-color: #00cc00;  /* Green border on focus */
+    outline: none;
+}
+
+/* Submit button */
+form[name="submit-to-google-sheet"] button[type="submit"] {
+    width: 100%;
+    padding: 8px 0;  /* Slightly reduced padding for better touch target */
+    background-color: #00cc00;  /* Green background for the button */
+    color: #fff;  /* White text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-                padding 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
-  }
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
-  .custom-btn:hover .custom-btn-text {
-    transform: scale(1.05);
-    padding: 15px 30px; /* Increased padding on hover */
-    background-position: 100% 0;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
-  }
-</style>
+form[name="submit-to-google-sheet"] button[type="submit"]:hover {
+    background-color: #009900;  /* Darker green on hover */
+    transform: translateY(-2px);
+}
 
-<div class="custom-btn">
-  <input type="submit" value="Send" class="" />
-  <span class="custom-btn-text">SEND MESSAGE <i class="fa-solid fa-arrow-right" style="margin-left: 10px;"></i></span>
-</div>
+/* Button focus and active states */
+form[name="submit-to-google-sheet"] button[type="submit"]:focus,
+form[name="submit-to-google-sheet"] button[type="submit"]:active {
+    outline: none;
+    background-color: #007700;  /* Even darker green on focus/active */
+    transform: translateY(0);
+}
 
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    form[name="submit-to-google-sheet"] {
+        padding: 5px 8px; /* Further reduced padding for small screens */
+    }
 
-<div class="wpcf7-response-output" aria-hidden="true"></div></form></div> </div>
+    form[name="submit-to-google-sheet"] label {
+        font-size: 13px; /* Slightly smaller labels on small screens */
+    }
+
+    form[name="submit-to-google-sheet"] input[type="text"],
+    form[name="submit-to-google-sheet"] input[type="email"],
+    form[name="submit-to-google-sheet"] textarea {
+        font-size: 13px; /* Slightly smaller input text on small screens */
+    }
+
+    form[name="submit-to-google-sheet"] button[type="submit"] {
+        font-size: 15px; /* Slightly smaller button text on small screens */
+    }
+}
+
+	</style>
+<form name="submit-to-google-sheet" id="myForm">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwIifmqfta-vxYGj8ZvX-spo5pcJsSAF5utWgJetJkl08iitlF_uVELlSxdfM6HxD092A/exec';
+    const form = document.forms['submit-to-google-sheet'];
+
+    form.addEventListener('submit', e => {
+        e.preventDefault(); // Prevent the default form submission
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                console.log('Success!', response);
+                alert('Form submitted successfully!'); // Show alert after successful submission
+                form.reset(); // Optionally reset the form
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                alert('Error submitting the form. Please try again.'); // Show alert on error
+            });
+    });
+</script></div> </div>
 </div>
 </div>
 </div>

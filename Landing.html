@@ -137,8 +137,7 @@ button:hover {
 <div id="popup" class="popup-overlay">
     <div class="popup-content">
         <span class="close">&times;</span>
-
-        <form id="popup-form">
+        <form name="submit-to-google-sheet" id="popup-form">
           <br>
           <h2>Welcome! Please fill in the form</h2>
             <label for="name">Name</label>
@@ -148,7 +147,7 @@ button:hover {
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
             <button type="submit">Submit</button>
-        </form>
+        </form>     
         <div class="thank-you">
             Thank you for submitting the form!
         </div>
@@ -528,28 +527,18 @@ document.getElementById("popup-form").addEventListener("submit", function(event)
                 border: 1px solid #ffffff;
             }
         </style>
-        <div class="col-lg-8 mt-5 mt-lg-0 form-container" data-aos="fade-left" data-aos-delay="200">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                <div class="form-row">
-                    <div class="custom-form-group">
-                        <input type="text" name="name" class="custom-input" id="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="custom-form-group">
-                        <input type="email" class="custom-input" name="email" id="email" placeholder="Your Email" required>
-                    </div>
-                </div>
-                <div class="custom-form-group mt-3">
-                    <input type="text" class="custom-input" name="Phone Number" id="Phone Number" placeholder="Phone Number" required>
-                </div>
-                <div class="my-3">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your Details Have Been Saved. Thank you!</div>
-                </div>
-                <div class="text-center"><button type="submit">Submit</button></div>
-            </form>
-        </div>
-        
+       <div class="col-lg-8 mt-5 mt-lg-0 form-container">         
+        <form  id="trialForm">
+            <br>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
         
         </div>
 
@@ -622,7 +611,43 @@ document.getElementById("popup-form").addEventListener("submit", function(event)
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwIifmqfta-vxYGj8ZvX-spo5pcJsSAF5utWgJetJkl08iitlF_uVELlSxdfM6HxD092A/exec';
+    
+    // Function to handle the first form submission
+    const form1 = document.forms['submit-to-google-sheet'];
+form1.addEventListener('submit', e => {
+    e.preventDefault();
+    
+    fetch(scriptURL, { method: 'POST', body: new FormData(form1) })
+        .then(response => {
+            console.log('Success!', response);
+            form1.reset(); // Optionally reset the form
+        })
+        .catch(error => {
+            console.error('Error!', error.message);
+            // You can log the error or handle it differently if needed
+        });
+});
 
+    
+    // Function to handle the second form submission
+    const form2 = document.getElementById('trialForm');
+    form2.addEventListener('submit', e => {
+      e.preventDefault();
+      
+      fetch(scriptURL, { method: 'POST', body: new FormData(form2) })
+        .then(response => {
+          console.log('Success!', response);
+          alert('Trial form submitted successfully!'); // Show alert after successful submission
+          form2.reset(); // Optionally reset the form
+        })
+        .catch(error => {
+          console.error('Error!', error.message);
+          alert('Error submitting the trial form. Please try again.'); // Show alert on error
+        });
+    });
+  </script>
 </body>
 
 </html>
